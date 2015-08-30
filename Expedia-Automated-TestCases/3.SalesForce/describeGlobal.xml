@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e05bc798-e024-41b6-84b7-d24f32f623c3" isOneWay="false" action="" name="describeGlobal" bindingOperationName="describeGlobal" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e05bc798-e024-41b6-84b7-d24f32f623c3fileName">describeGlobal</con:setting></con:settings><con:call id="09cf6dea-671a-4679-9c06-c1acf985a0bf" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:PackageVersionHeader>
+         <!--Zero or more repetitions:-->
+         <urn:packageVersions>
+            <urn:majorNumber>?</urn:majorNumber>
+            <urn:minorNumber>?</urn:minorNumber>
+            <urn:namespace>?</urn:namespace>
+         </urn:packageVersions>
+      </urn:PackageVersionHeader>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:describeGlobal/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/describeGlobalRequest"/></con:call></con:operation>

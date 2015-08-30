@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="b0f50051-2b06-4ef3-b434-d73f89ff42c7" isOneWay="false" action="" name="create" bindingOperationName="create" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b0f50051-2b06-4ef3-b434-d73f89ff42c7fileName">create</con:setting></con:settings><con:call id="d3f94edc-ed68-4ea2-aa41-f69c243db638" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com" xmlns:urn1="urn:sobject.enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:EmailHeader>
+         <urn:triggerAutoResponseEmail>?</urn:triggerAutoResponseEmail>
+         <urn:triggerOtherEmail>?</urn:triggerOtherEmail>
+         <urn:triggerUserEmail>?</urn:triggerUserEmail>
+      </urn:EmailHeader>
+      <urn:PackageVersionHeader>
+         <!--Zero or more repetitions:-->
+         <urn:packageVersions>
+            <urn:majorNumber>?</urn:majorNumber>
+            <urn:minorNumber>?</urn:minorNumber>
+            <urn:namespace>?</urn:namespace>
+         </urn:packageVersions>
+      </urn:PackageVersionHeader>
+      <urn:DebuggingHeader>
+         <urn:debugLevel>?</urn:debugLevel>
+      </urn:DebuggingHeader>
+      <urn:LocaleOptions>
+         <!--Optional:-->
+         <urn:language>?</urn:language>
+         <!--Optional:-->
+         <urn:localizeErrors>?</urn:localizeErrors>
+      </urn:LocaleOptions>
+      <urn:DuplicateRuleHeader>
+         <urn:allowSave>?</urn:allowSave>
+         <urn:includeRecordDetails>?</urn:includeRecordDetails>
+         <urn:runAsCurrentUser>?</urn:runAsCurrentUser>
+      </urn:DuplicateRuleHeader>
+      <urn:AllOrNoneHeader>
+         <urn:allOrNone>?</urn:allOrNone>
+      </urn:AllOrNoneHeader>
+      <urn:StreamingEnabledHeader>
+         <urn:streamingEnabled>?</urn:streamingEnabled>
+      </urn:StreamingEnabledHeader>
+      <urn:DisableFeedTrackingHeader>
+         <urn:disableFeedTracking>?</urn:disableFeedTracking>
+      </urn:DisableFeedTrackingHeader>
+      <urn:AllowFieldTruncationHeader>
+         <urn:allowFieldTruncation>?</urn:allowFieldTruncation>
+      </urn:AllowFieldTruncationHeader>
+      <urn:MruHeader>
+         <urn:updateMru>?</urn:updateMru>
+      </urn:MruHeader>
+      <urn:AssignmentRuleHeader>
+         <urn:assignmentRuleId>?</urn:assignmentRuleId>
+         <urn:useDefaultRule>?</urn:useDefaultRule>
+      </urn:AssignmentRuleHeader>
+      <urn:SessionHeader>
+         <urn:sessionId/>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:create>
+         <!--Zero or more repetitions:-->
+         
+      </urn:create>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/createRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

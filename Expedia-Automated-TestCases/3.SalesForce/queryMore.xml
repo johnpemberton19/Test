@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ce852de4-0acb-4657-836d-3c737141f97d" isOneWay="false" action="" name="queryMore" bindingOperationName="queryMore" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ce852de4-0acb-4657-836d-3c737141f97dfileName">queryMore</con:setting></con:settings><con:call id="e0ad6aa1-2b8c-4e0a-8c79-9594fe3a7359" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:QueryOptions>
+         <!--Optional:-->
+         <urn:batchSize>?</urn:batchSize>
+      </urn:QueryOptions>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:queryMore>
+         <urn:queryLocator>?</urn:queryLocator>
+      </urn:queryMore>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/queryMoreRequest"/></con:call></con:operation>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="8a4df5f2-59f0-4fd9-b5b7-820d393af393" isOneWay="false" action="" name="describeAvailableQuickActions" bindingOperationName="describeAvailableQuickActions" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="8a4df5f2-59f0-4fd9-b5b7-820d393af393fileName">describeAvailableQuickActions</con:setting></con:settings><con:call id="a60f599f-634c-4fa0-b80c-a33fdff44cb3" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:LocaleOptions>
+         <!--Optional:-->
+         <urn:language>?</urn:language>
+         <!--Optional:-->
+         <urn:localizeErrors>?</urn:localizeErrors>
+      </urn:LocaleOptions>
+      <urn:PackageVersionHeader>
+         <!--Zero or more repetitions:-->
+         <urn:packageVersions>
+            <urn:majorNumber>?</urn:majorNumber>
+            <urn:minorNumber>?</urn:minorNumber>
+            <urn:namespace>?</urn:namespace>
+         </urn:packageVersions>
+      </urn:PackageVersionHeader>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:describeAvailableQuickActions>
+         <urn:contextType>?</urn:contextType>
+      </urn:describeAvailableQuickActions>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/describeAvailableQuickActionsRequest"/></con:call></con:operation>

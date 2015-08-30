@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="4b1204d8-29d6-4b66-b7a3-aa1d94369aeb" isOneWay="false" action="" name="describeSearchScopeOrder" bindingOperationName="describeSearchScopeOrder" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4b1204d8-29d6-4b66-b7a3-aa1d94369aebfileName">describeSearchScopeOrder</con:setting></con:settings><con:call id="311e6d82-18b5-47a5-8e99-359fb0d179f4" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:PackageVersionHeader>
+         <!--Zero or more repetitions:-->
+         <urn:packageVersions>
+            <urn:majorNumber>?</urn:majorNumber>
+            <urn:minorNumber>?</urn:minorNumber>
+            <urn:namespace>?</urn:namespace>
+         </urn:packageVersions>
+      </urn:PackageVersionHeader>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:describeSearchScopeOrder/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/describeSearchScopeOrderRequest"/></con:call></con:operation>

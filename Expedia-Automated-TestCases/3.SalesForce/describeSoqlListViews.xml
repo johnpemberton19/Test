@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="ee634c51-9039-4c45-b1f0-e1e8678be0ec" isOneWay="false" action="" name="describeSoqlListViews" bindingOperationName="describeSoqlListViews" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ee634c51-9039-4c45-b1f0-e1e8678be0ecfileName">describeSoqlListViews</con:setting></con:settings><con:call id="33103283-d3cc-4684-93ff-958ee908e1ab" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:PackageVersionHeader>
+         <!--Zero or more repetitions:-->
+         <urn:packageVersions>
+            <urn:majorNumber>?</urn:majorNumber>
+            <urn:minorNumber>?</urn:minorNumber>
+            <urn:namespace>?</urn:namespace>
+         </urn:packageVersions>
+      </urn:PackageVersionHeader>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:describeSoqlListViews>
+         <urn:request>
+            <!--1 or more repetitions:-->
+            <urn:listViewParams>
+               <urn:developerNameOrId>?</urn:developerNameOrId>
+               <urn:sobjectType>?</urn:sobjectType>
+            </urn:listViewParams>
+         </urn:request>
+      </urn:describeSoqlListViews>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/describeSoqlListViewsRequest"/></con:call></con:operation>

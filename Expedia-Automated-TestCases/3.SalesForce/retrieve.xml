@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="bd0a9682-1727-4c1a-91f3-6fc99e503d20" isOneWay="false" action="" name="retrieve" bindingOperationName="retrieve" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="bd0a9682-1727-4c1a-91f3-6fc99e503d20fileName">retrieve</con:setting></con:settings><con:call id="ff81fbfa-7578-444f-ae4e-925ec1a65432" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:PackageVersionHeader>
+         <!--Zero or more repetitions:-->
+         <urn:packageVersions>
+            <urn:majorNumber>?</urn:majorNumber>
+            <urn:minorNumber>?</urn:minorNumber>
+            <urn:namespace>?</urn:namespace>
+         </urn:packageVersions>
+      </urn:PackageVersionHeader>
+      <urn:MruHeader>
+         <urn:updateMru>?</urn:updateMru>
+      </urn:MruHeader>
+      <urn:QueryOptions>
+         <!--Optional:-->
+         <urn:batchSize>?</urn:batchSize>
+      </urn:QueryOptions>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:retrieve>
+         <urn:fieldList>?</urn:fieldList>
+         <urn:sObjectType>?</urn:sObjectType>
+         <!--Zero or more repetitions:-->
+         <urn:ids>?</urn:ids>
+      </urn:retrieve>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/retrieveRequest"/></con:call></con:operation>

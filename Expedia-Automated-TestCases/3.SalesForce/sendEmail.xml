@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0d34d4c3-c8f8-4d96-9688-69f5b1c7ae5b" isOneWay="false" action="" name="sendEmail" bindingOperationName="sendEmail" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0d34d4c3-c8f8-4d96-9688-69f5b1c7ae5bfileName">sendEmail</con:setting></con:settings><con:call id="ba86ea3a-da52-4ade-80d9-a0334162950d" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:sendEmail>
+         <!--0 to 10 repetitions:-->
+         <urn:messages>
+            <urn:bccSender>?</urn:bccSender>
+            <urn:emailPriority>?</urn:emailPriority>
+            <urn:replyTo>?</urn:replyTo>
+            <urn:saveAsActivity>?</urn:saveAsActivity>
+            <urn:senderDisplayName>?</urn:senderDisplayName>
+            <urn:subject>?</urn:subject>
+            <urn:useSignature>?</urn:useSignature>
+         </urn:messages>
+      </urn:sendEmail>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/sendEmailRequest"/></con:call></con:operation>

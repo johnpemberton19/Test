@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="36e36c07-59ef-4cc4-9fcf-d359fa2e6eae" isOneWay="false" action="" name="describeNouns" bindingOperationName="describeNouns" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="36e36c07-59ef-4cc4-9fcf-d359fa2e6eaefileName">describeNouns</con:setting></con:settings><con:call id="8d9ca039-6372-40c6-9caf-cb7a7356fb60" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://test.salesforce.com/services/Soap/c/34.0/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:LocaleOptions>
+         <!--Optional:-->
+         <urn:language>?</urn:language>
+         <!--Optional:-->
+         <urn:localizeErrors>?</urn:localizeErrors>
+      </urn:LocaleOptions>
+      <urn:PackageVersionHeader>
+         <!--Zero or more repetitions:-->
+         <urn:packageVersions>
+            <urn:majorNumber>?</urn:majorNumber>
+            <urn:minorNumber>?</urn:minorNumber>
+            <urn:namespace>?</urn:namespace>
+         </urn:packageVersions>
+      </urn:PackageVersionHeader>
+      <urn:SessionHeader>
+         <urn:sessionId>?</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:describeNouns>
+         <!--0 to 100 repetitions:-->
+         <urn:nouns>?</urn:nouns>
+         <urn:onlyRenamed>?</urn:onlyRenamed>
+         <urn:includeFields>?</urn:includeFields>
+      </urn:describeNouns>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="urn:enterprise.soap.sforce.com/Soap/describeNounsRequest"/></con:call></con:operation>

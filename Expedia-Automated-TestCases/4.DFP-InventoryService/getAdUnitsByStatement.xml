@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="e263a111-2b83-4be1-a865-66d4124e669d" isOneWay="false" action="" name="getAdUnitsByStatement" bindingOperationName="getAdUnitsByStatement" type="Request-Response" outputName="getAdUnitsByStatementResponse" inputName="getAdUnitsByStatementRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e263a111-2b83-4be1-a865-66d4124e669dfileName">getAdUnitsByStatement</con:setting></con:settings><con:call id="72e8e4d6-5dbf-4cd8-8b4d-e7ef1217957c" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ads.google.com/apis/ads/publisher/v201502/InventoryService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v20="https://www.google.com/apis/ads/publisher/v201502">
+   <soapenv:Header>
+      <v20:RequestHeader>
+         <!--Optional:-->
+         
+         <!--Optional:-->
+         
+      </v20:RequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v20:getAdUnitsByStatement>
+         <!--Optional:-->
+         <v20:filterStatement>
+            <!--Optional:-->
+            <v20:query>?</v20:query>
+            <!--Zero or more repetitions:-->
+            <v20:values>
+               <!--Optional:-->
+               <v20:key>?</v20:key>
+               <!--Optional:-->
+               
+            </v20:values>
+         </v20:filterStatement>
+      </v20:getAdUnitsByStatement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.google.com/apis/ads/publisher/v201502/InventoryServiceInterface/getAdUnitsByStatementRequest"/><con:wsrmConfig version="1.2"/></con:call></con:operation>

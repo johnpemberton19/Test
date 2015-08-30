@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="2c4a9437-0ef2-4e07-9afb-1dbf1e1bda84" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase - CreateSite" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="2c4a9437-0ef2-4e07-9afb-1dbf1e1bda84fileName">TestCase---CreateSite</con:setting></con:settings><con:testStep type="properties" name="Properties" id="eb8457e4-b527-4434-8a91-b142af0b0182"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>DFP-NetworkCode</con:name><con:value>11850712</con:value></con:property><con:property><con:name>DFP-ApplicationName</con:name><con:value>Automated Testing</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="request" name="SFDC - Create New Location" id="15414dfd-f3df-4d8f-9360-f2e824ad53e6"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>3.SalesForce</con:interface><con:operation>create</con:operation><con:request name="SFDC - Create New Location" id="35e9f1f5-e961-4428-be23-feeeaf9ba9e1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://cs15.salesforce.com/services/Soap/c/34.0/00De0000005VPhR/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:EmailHeader>
+         <urn:triggerAutoResponseEmail>?</urn:triggerAutoResponseEmail>
+         <urn:triggerOtherEmail>?</urn:triggerOtherEmail>
+         <urn:triggerUserEmail>?</urn:triggerUserEmail>
+      </urn:EmailHeader>
+      <urn:PackageVersionHeader/>
+      <urn:DebuggingHeader>
+         <urn:debugLevel>?</urn:debugLevel>
+      </urn:DebuggingHeader>
+      <urn:LocaleOptions/>
+      <urn:DuplicateRuleHeader>
+         <urn:allowSave>?</urn:allowSave>
+         <urn:includeRecordDetails>?</urn:includeRecordDetails>
+         <urn:runAsCurrentUser>?</urn:runAsCurrentUser>
+      </urn:DuplicateRuleHeader>
+      <urn:AllOrNoneHeader>
+         <urn:allOrNone>?</urn:allOrNone>
+      </urn:AllOrNoneHeader>
+      <urn:StreamingEnabledHeader>
+         <urn:streamingEnabled>?</urn:streamingEnabled>
+      </urn:StreamingEnabledHeader>
+      <urn:DisableFeedTrackingHeader>
+         <urn:disableFeedTracking>?</urn:disableFeedTracking>
+      </urn:DisableFeedTrackingHeader>
+      <urn:AllowFieldTruncationHeader>
+         <urn:allowFieldTruncation>?</urn:allowFieldTruncation>
+      </urn:AllowFieldTruncationHeader>
+      <urn:MruHeader>
+         <urn:updateMru>?</urn:updateMru>
+      </urn:MruHeader>
+      <urn:AssignmentRuleHeader>
+         <urn:assignmentRuleId xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+         <urn:useDefaultRule>?</urn:useDefaultRule>
+      </urn:AssignmentRuleHeader>
+      <urn:SessionHeader>
+         <urn:sessionId>${Properties#Salesforce-sessionId}</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:create/>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="dd870acb-e0f2-4727-a639-47ad713eb2f6"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="calltestcase" name="Boomi-Execute" id="be140097-24d5-4b67-893f-64d0b48647b7"><con:settings/><con:config xsi:type="con:RunTestCaseStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:targetTestCase>3208f038-727b-4d7e-83e3-57aab5864d10</con:targetTestCase><con:properties><con:property><con:name>Boomi-UserName</con:name><con:value>rajeevs@slalom.com</con:value></con:property><con:property><con:name>Boomi-Password</con:name><con:value>Slalom@123</con:value></con:property></con:properties><con:returnProperties/><con:runMode>PARALLELL</con:runMode></con:config></con:testStep><con:testStep type="request" name="SFDC - Lookup DFP-Id" id="c4599fa7-71aa-443a-a2ba-8296fd5b4819"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>3.SalesForce</con:interface><con:operation>query</con:operation><con:request name="SFDC - Lookup DFP-Id" id="b961ca26-ee15-498a-b14f-815dd013a04a" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://cs15.salesforce.com/services/Soap/c/34.0/00De0000005VPhR/0DFe000000001T4</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:enterprise.soap.sforce.com">
+   <soapenv:Header>
+      <urn:PackageVersionHeader/>
+      <urn:MruHeader>
+         <urn:updateMru>false</urn:updateMru>
+      </urn:MruHeader>
+      <urn:QueryOptions/>
+      <urn:SessionHeader>
+         <urn:sessionId>${Global - Login DFP and SFDC#SFDC-SessionID}</urn:sessionId>
+      </urn:SessionHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn:query>
+         <urn:queryString>SELECT FirstName, LastName FROM Contact</urn:queryString>
+      </urn:query>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="4833c0e2-3e4f-4190-b81a-aa0066cf603b"/><con:assertion type="XPath Match" id="a50d2768-6c23-4c50-8f7b-111f062478ad" name="Check for existence of [soapenv:Fault]"><con:configuration><path>declare namespace soapenv='http://schemas.xmlsoap.org/soap/envelope/';
+exists( //soapenv:Fault)</path><content>false</content><allowWildcards>false</allowWildcards><ignoreNamspaceDifferences>false</ignoreNamspaceDifferences><ignoreComments>false</ignoreComments></con:configuration></con:assertion><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:testStep type="request" name="DFP - Get Location" id="bf4f88c1-a461-4c22-86b3-31f15ffd7729"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>4.DFP-InventoryService</con:interface><con:operation>getAdUnitsByStatement</con:operation><con:request name="DFP - Get Location" id="3d322589-3691-44f4-b6e9-53276e6d1955" defaultOutgoingWss="" defaultIncomingWss=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Authentication" value="" xmlns="http://eviware.com/soapui/config"/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://ads.google.com/apis/ads/publisher/v201502/InventoryService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v20="https://www.google.com/apis/ads/publisher/v201502">
+   <soapenv:Header>
+      <v20:RequestHeader><v20:networkCode>${Properties#DFP-NetworkCode}</v20:networkCode><v20:applicationName>${Properties#DFP-ApplicationName}</v20:applicationName></v20:RequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v20:getAdUnitsByStatement><v20:filterStatement><v20:query>query = "WHERE DFPID = :adServerCode" </v20:query><v20:values><v20:key>adServerCode</v20:key><v20:value xsi:type="v20:TextValue" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/></v20:values></v20:filterStatement></v20:getAdUnitsByStatement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:assertion type="SOAP Response" id="049d4e76-01d1-472d-b718-4406dd8a0867"/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/><con:breakPoints><con:testStepId>eb8457e4-b527-4434-8a91-b142af0b0182</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>15414dfd-f3df-4d8f-9360-f2e824ad53e6</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints><con:breakPoints><con:testStepId>12b9d98f-d2fa-4a7a-9908-f3f4c9c6e4a9</con:testStepId><con:status>NONE</con:status><con:properties/></con:breakPoints></con:testCase>

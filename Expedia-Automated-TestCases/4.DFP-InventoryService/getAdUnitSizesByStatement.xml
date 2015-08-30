@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="6efb31ea-2e0d-4322-b026-4aef71f6659c" isOneWay="false" action="" name="getAdUnitSizesByStatement" bindingOperationName="getAdUnitSizesByStatement" type="Request-Response" outputName="getAdUnitSizesByStatementResponse" inputName="getAdUnitSizesByStatementRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="6efb31ea-2e0d-4322-b026-4aef71f6659cfileName">getAdUnitSizesByStatement</con:setting></con:settings><con:call id="33999427-74a0-4ebb-92cf-49678f317fa9" name="Request 1" defaultOutgoingWss="" defaultIncomingWss=""><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://ads.google.com/apis/ads/publisher/v201502/InventoryService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v20="https://www.google.com/apis/ads/publisher/v201502">
+   <soapenv:Header>
+      <v20:RequestHeader>
+         <!--Optional:-->
+         <v20:networkCode>?</v20:networkCode>
+         <!--Optional:-->
+         <v20:applicationName>?</v20:applicationName>
+      </v20:RequestHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v20:getAdUnitSizesByStatement>
+         <!--Optional:-->
+         <v20:filterStatement>
+            <!--Optional:-->
+            <v20:query>?</v20:query>
+            <!--Zero or more repetitions:-->
+            <v20:values>
+               <!--Optional:-->
+               <v20:key>?</v20:key>
+               <!--Optional:-->
+               <v20:value/>
+            </v20:values>
+         </v20:filterStatement>
+      </v20:getAdUnitSizesByStatement>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.google.com/apis/ads/publisher/v201502/InventoryServiceInterface/getAdUnitSizesByStatementRequest"/></con:call></con:operation>
